@@ -37,12 +37,12 @@ h4 {
     font-size: 20px;
 }
 
-a#clean {
+.clean {
     text-decoration: none;
     color: black;
 
 }
-a#blue-clean {
+.blue-clean {
     text-decoration: none;
     color: blue;
 }
@@ -97,6 +97,13 @@ ul#vert li a {
 
 ul#vert li a:hover {
     background: white;
+}
+
+.bottom {  
+    position: fixed; 
+    bottom: 0;
+    text-align: right;
+    margin: 0 0 0 10px;
 }
 
 .pos-map {

@@ -5,28 +5,27 @@
   <title>Julian Song's Website</title> 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <script type="text/javascript" src="C:\Users\Julian\Downloads\website\scroll.js"></script>
 </head>
 
 <body>
-  <h1><a id="clean" href="C:\Users\Julian\Downloads\website\homepage.html">Julian Song's Website</a></h1>
+  <h1><a clas="clean" href="C:\Users\Julian\Downloads\website\homepage.html">Julian Song's Website</a></h1>
   <h2>Welcome to My Website!</h2>
     <ul id="menu">
-      <li><a href="C:\Users\Julian\Downloads\website\homepage.html">About</a></li>
-      <li><a href="C:\Users\Julian\Downloads\website\contact.html">Contact</a></li>
-      <li><a href="C:\Users\Julian\Downloads\website\resume.pdf">Resum&eacute;</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!--<li><a href="C:resume.pdf">Resum&eacute;</a></li> -->
     </ul>
     <ul id="vert">
-      <li><a id="clean" onClick= "window.scroll(0,findPos(document.getElementById('me')))">About Me</a></li>
-      <li><a id="clean" onClick= "window.scroll(0,findPos(document.getElementById('fi')))">Fields of Interest</a></li>
+      <li><a class="clean" onClick= "window.scroll(0,findPos(document.getElementById('me')))">About Me</a></li>
+      <li><a class="clean" onClick= "window.scroll(0,findPos(document.getElementById('fi')))">Fields of Interest</a></li>
       <li><a onClick= "window.scroll(0,findPos(document.getElementById('hob')))">Hobbies</a></li>
       <li><a onClick= "window.scroll(0,findPos(document.getElementById('wp')))">Workplace</a></li>
     </ul>
   <div id="me">
   <h4> About Me</h4>
-  <p>Hi, my name is Julian Song who is a second year undergraduate at the <a id="blue-clean" href="http://www.utoronto.ca/">University of Toronto</a> specializing in <a id ="blue-clean" href="http://web.cs.toronto.edu/">Computer Science</a> and majoring in <a id="blue-clean" href="http://www.utstat.utoronto.ca/">Statistics</a>.</p>
+  <p>Hi, my name is Julian Song who is a second year undergraduate at the <a class="blue-clean" href="http://www.utoronto.ca/">University of Toronto</a> specializing in <a id ="blue-clean" href="http://web.cs.toronto.edu/">Computer Science</a> and majoring in <a id="blue-clean" href="http://www.utstat.utoronto.ca/">Statistics</a>.</p>
   
-  <p>I currently work as 16 months BPM Java and Responsive Web Software Developer intern at <a id="blue-clean" href="http://www.ibm.com/ca-en/">IBM Toronto Software Lab</a>.<br> You can check more about me in detail at <a id="blue-clean" href="https://ca.linkedin.com/in/julian-song-560b99bb">my linkedin page.</a></p>
+  <p>I currently work as 16 months BPM Java and Responsive Web Software Developer intern at <a class="blue-clean" href="http://www.ibm.com/ca-en/">IBM Toronto Software Lab</a>.<br> You can check more about me in detail at <a class="blue-clean" href="https://ca.linkedin.com/in/julian-song-560b99bb">my linkedin page.</a></p>
   </div>
   
   <div id="fi">
@@ -45,7 +44,7 @@
    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:340px;width:900px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(43.8488565,-79.33839460000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8488565,-79.33839460000002)});infowindow = new google.maps.InfoWindow({content:'<strong>My current workplace (IBM Toronto Software Lab)</strong><br>8200 Warden Avenue, Markham, ON<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </div>
   <div class="bottom">
-      Developed by Julian Song 
+      This site is Developed by Julian Song and hosted by Github 
   </div>
 </body>
 </html>
