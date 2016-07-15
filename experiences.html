@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html style="height: 125%;">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <h3><a class="clean" href="experiences.html">Portfolio</a></h3>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiences.html">Portfolio</a></li>
+      <!--<li><a href="C:resume.pdf">Resum&eacute;</a></li> -->
+    </ul>
+    <ul id="vert">
+        <li onClick= "window.scroll(0,findPos(document.getElementById('workexperiences')))">Work Experiences</li>
+        <li onClick= "window.scroll(0,findPos(document.getElementById('education')))">Education</li>
+        <li onClick= "window.scroll(0,findPos(document.getElementById('extra-curricular')))">Extra-curricular</li>
+    </ul>
+    <div id="workexperiences" class="textCenter">
+        <h4>Work Experiences</h4>
+        <div>
+            <div class="periodOutliner">May 2016 - Present</div> <img src="images/ibm.jpg" alt="IBM Canada Logo" style="float:right; height: 10%; width: 15%; position: relative;">
+            <div>IBM Toronto Software Lab, Markham, ON</div>
+            <p>I currently work as a BPM Java and Responsive Web Software Developer Intern at IBM Toronto Software Lab. <br><br>
+            </p>
+        </div>
+        <div>
+            <div class="periodOutliner">May 2015 - August 2015</div> <img src="images/igemuoft.png" alt="iGEM UofT logo" style="float:right;width:10%;height:10%; position: relative;">
+            <div>iGEM UofT, Toronto, ON</div>
+            <p>I worked as Summer Student Software Developer and Researcher at iGEM UofT 2015 Team.
+            More can be found on <a href="igem/uoft">this link</a>
+            </p>
+        </div>
+    </div>
+    <div id="education" class="textCenter">
+        <h4>Education</h4>
+        <div>
+            <div class="periodOutliner">September 2014 - Present</div>
+            <div>University of Toronto St.George Campus, Toronto, ON<br>
+            Honours Bachelor of Science (specialist in Computer Science and major in Statistics)</div><p></p>
+        </div>
+        <div>
+            <div class="periodOutliner">September 2011 - May 2014</div>
+            <div>Sir Winston Churchill Secondary School, Vancouver, BC<br>
+            BC Highschool Diploma & IB Diploma Program</div><p></p>
+        </div>
+    </div>
+    <div id="extra-curricular" class= "textCenter">
+        <h4>Extra-curricular & Volunteer</h4>
+        <div>
+            <div class="periodOutliner">September 2016 - Present</div>
+            <p>IBM Future Blue Intern Web Team Developer, Markham, ON<p>
+        </div>
+        <div>
+            <div class="periodOutliner">September 2015 - Present</div>
+            <p>Department of Computer Science Ambassador, Toronto, ON<p><br>
+        </div>
+
+
+    </div>
+
+<div class="bottom">
+        Developed by Julian Song and hosted by Github 
+    </div>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
     <title>Julian Song's Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css" type="text/css"/>
     <script type="text/javascript" src="scroll.js"></script>
 </head>
 
@@ -12,9 +12,32 @@
     <ul id="menu">
         <li><a href="index.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiences.html">Portfolio</a></li>
     </ul>
-    <body>
+    <form action="record/save.txt" method="post">
+
+<!--siting mozilla-->
+<body>
+<p style="margin-left:auto; margin-right: auto; width: 340px;">Any Question? Feel free to contact me!</p>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email" />
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+    
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+    <br>
+</body>
+</form>
         <p style="text-align: center; font-size: 25px;"> You can directly contact me by email: <a href="mailto:ymsong01@gmail.com" target="_top">ymsong01@gmail.com</a></p>
-    </body>
 
 </html>

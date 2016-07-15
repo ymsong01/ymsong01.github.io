@@ -1,14 +1,11 @@
 
 html {
-    height: 125%;
+    height: 100%;
 }
 
 body {
-    height: 120%;
+    height: 100%;
     font-family: "Times New Roman",  Georgia, Serif;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
 }
 
 
@@ -28,26 +25,51 @@ h2 {
 
 h3 {
     text-align: center;
+    font-size: 22px;
 }
 
 h4 {
     text-align: left;
-    margin: 1em 1em 0 200px;
     font-size: 20px;
+    margin: 0px;
+    border-bottom: solid black 2px;
+}
+
+.textCenter {
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clean {
     text-decoration: none;
     color: black;
-
 }
+
 .blue-clean {
     text-decoration: none;
     color: blue;
 }
+
+.paragraphDivider {
+    padding-bottom: 20px;
+}
+
+.periodOutliner {
+    font-weight: bold; 
+    margin: 0px; 
+    font-style: italic;
+}
+
 ul#menu {
     padding: 5px 10px;
     background: #00FF00;
+    height: 30px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%;
+    position: relative;
+    min-width: 400px;
 }
 
 ul#menu li {
@@ -56,7 +78,8 @@ ul#menu li {
 
 ul#menu li a {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 800;
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 4px 4px 0 0;
@@ -64,37 +87,40 @@ ul#menu li a {
 
 ul#menu li a:hover {
     background-color: white;
+    height: 30px;
 }
 
 p {
     font-size: 18px;
-    margin: 5px 1em 0 200px;
-    text-align: left;
+    
 }
 
 ul#vert {
     text-decoration: none;
     font-size: 18px;
-    background: orange;
-    border-style: solid;
-    width: 150px;
-    height: 250px;
+    background: white;
+    height: 100%;
     position: relative;
     list-style-type: none;
     float: left;
-    margin-left: 15px;
-    border-width: 4px;
+    margin-left: 4%;
+    padding-right: 2%;
 }
 
-ul#vert li a {
+@media (max-width: 1000px) {
+    ul#vert{
+        display: none;
+        }
+    }
+
+ul#vert li{
     list-style-type: none;
     text-decoration: none;
     cursor: pointer;
-    margin-left: 10px;
     margin-bottom: 30px;
 }
 
-ul#vert li a:hover {
+ul#vert li:hover {
     background: white;
 }
 
@@ -102,10 +128,5 @@ ul#vert li a:hover {
     position: fixed; 
     bottom: 0;
     text-align: right;
-    margin: 0 0 0 10px;
-}
-
-.pos-map {
-    position: relative;
-    left: 200px;
+    margin: 0 0 0 1%;
 }

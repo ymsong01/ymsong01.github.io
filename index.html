@@ -3,8 +3,8 @@
 
 <head>
     <title>Julian Song's Website</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
 </head>
 
@@ -12,38 +12,41 @@
     <h1><a class="clean" href="index.html">Julian Song's Website</a></h1>
     <h2>Welcome to My Website!</h2>
     <ul id="menu">
-        <li><a href="index.html">About</a></li>
+        <li><a href="index.html" style="margin-left: 5px;">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiences.html">Portfolio</a></li>
       <!--<li><a href="C:resume.pdf">Resum&eacute;</a></li> -->
     </ul>
     <ul id="vert">
-        <li><a class="clean" onClick= "window.scroll(0,findPos(document.getElementById('me')))">About Me</a></li>
-        <li><a class="clean" onClick= "window.scroll(0,findPos(document.getElementById('fi')))">Fields of Interest</a></li>
-        <li><a onClick= "window.scroll(0,findPos(document.getElementById('hob')))">Hobbies</a></li>
-        <li><a onClick= "window.scroll(0,findPos(document.getElementById('wp')))">Workplace</a></li>
+        <li onClick= "window.scroll(0,findPos(document.getElementById('aboutMe')))">About Me</li>
+        <li onClick= "window.scroll(0,findPos(document.getElementById('fieldInterest')))">Fields of Interest</li>
+        <li onClick= "window.scroll(0,findPos(document.getElementById('hobbies')))">Hobbies</li>
     </ul>
-    <div id="me">
+    
+    <div id="aboutMe" class="textCenter">
+        <div>
         <h4> About Me</h4>
-        <p>Hi, my name is Julian Song who is a second year undergraduate at the <a class="blue-clean" href="http://www.utoronto.ca/">University of Toronto</a> specializing in <a class="blue-clean" href="http://web.cs.toronto.edu/">Computer Science</a> and majoring in <a class="blue-clean" href="http://www.utstat.utoronto.ca/">Statistics</a>.</p>
-  
-        <p>I currently work as 16 months BPM Java and Responsive Web Software Developer intern at <a class="blue-clean" href="http://www.ibm.com/ca-en/">IBM Toronto Software Lab</a>.<br> You can check more about me in detail at <a class="blue-clean" href="https://ca.linkedin.com/in/julian-song-560b99bb">my linkedin page.</a></p>
+        <p>Hi, my name is Julian Song who finished second year undergraduate at the <a class="blue-clean" href="http://www.utoronto.ca/">University of Toronto</a> specializing in <a class="blue-clean" href="http://web.cs.toronto.edu/">Computer Science</a> and majoring in <a class="blue-clean" href="http://www.utstat.utoronto.ca/">Statistics</a>.
+        I currently work as 16 months BPM Java and Responsive Web Software Developer intern at <a class="blue-clean" href="http://www.ibm.com/ca-en/">IBM Toronto Software Lab</a>.</p> 
+        <p>You can check more about me in detail at <a class="blue-clean" href="https://ca.linkedin.com/in/julian-song-560b99bb">my linkedin page.</a></p>
+        </div>
     </div>
   
-    <div id="fi">
+    <div id="fieldInterest" class="textCenter">
+        <div>
         <h4>Fields of Interest</h4>
         <p>My interests are Artificial Intelligence, Database Management and Applied Statistics. Please feel free to talk with me about these fields. <br>
         I also love to work on both front-end and back-end of software product. </p>
+        </div>
     </div>
   
-    <div id="hob">
+    <div id="hobbies" class="textCenter">
+    <div>
         <h4> Hobbies </h4>
         <p>My hobbies are reading fantasy novels and playing badminton. I also like to watch soccer and MLB matches.</p> 
-    </div>
-
-    <h4 id="wp"> My Workplace<br></h4>
-    <div class="pos-map">
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:340px;width:900px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(43.8488565,-79.33839460000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8488565,-79.33839460000002)});infowindow = new google.maps.InfoWindow({content:'<strong>My current workplace (IBM Toronto Software Lab)</strong><br>8200 Warden Avenue, Markham, ON<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-    </div>
+        <br>
+    </div>  
+    </div>  
     <div class="bottom">
         Developed by Julian Song and hosted by Github 
     </div>
