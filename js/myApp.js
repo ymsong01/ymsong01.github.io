@@ -134,10 +134,10 @@ angular.module('myApp', [])
 
 
         scp.skills = {
-            "Frontend Web": ["HTML/CSS/JS", "Bootstrap", "Foundation", "jQuery", "Angularjs", "VueJS"],
-            "Server-side": ["Nodejs", "Expressjs", "Spring", "Ajax", "RESTful"],
-            "Scripting/OOP": ["Java", "Python", "Bash", "Matlab"],
-            "Database": ["MySQL", "PostgreSQL", "DB2", "Mongodb"],
+            "Frontend Web": ["HTML/CSS/JS", "jQuery", "Angularjs"],
+            "Server-side": ["Nodejs", "Spring", "RESTful"],
+            "Scripting/OOP": ["Java", "Python", "Bash"],
+            "Database": ["MySQL", "PostgreSQL", "DB2"],
         };
 
         scp.to_link = {
@@ -152,7 +152,6 @@ angular.module('myApp', [])
             nodejs: "https://nodejs.org/en/",
             expressjs: "https://expressjs.com/",
             django: "https://www.djangoproject.com/",
-            vuejs: "https://vuejs.org/",
             ajax: "https://en.wikipedia.org/wiki/Ajax_(programming)",
             restful: "https://en.wikipedia.org/wiki/Representational_state_transfer",
             "html/css/js": "https://en.wikipedia.org/wiki/Front-end_web_development",
